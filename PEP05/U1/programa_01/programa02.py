@@ -13,9 +13,9 @@ num1_float=2.34
 num2_float=4.6
 cadena_str="Buenos Dias"
 
-print(str(booleano) + " su tipo es " + str(type(booleano)))
-print(str(num1_int) + " su tipo es " + str(type(num1_int)))
-print(str(num2_int) + " su tipo es " + str(type(num2_int)))
-print(str(num1_float) + " su tipo es " + str(type(num1_float)))
-print(str(num2_float) + " su tipo es " + str(type(num2_float)))
-print(cadena_str + " su tipo es " + str(type(cadena_str)))
+print(booleano, " su tipo es " ,type(booleano))
+print(num1_int," su tipo es " ,type(num1_int))
+print(num2_int, " su tipo es " ,type(num2_int))
+print(num1_float, " su tipo es " ,type(num1_float))
+print(num2_float, " su tipo es " ,type(num2_float))
+print(cadena_str, " su tipo es " ,type(cadena_str))
