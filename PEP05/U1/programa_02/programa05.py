@@ -1,4 +1,5 @@
-#Siempre saber que tipos de datos se vaya a pedir por teclado para que no exista error.
+#Escribe un programa que pregunte al usuario dos números y calcule su suma, resta, multiplicación, división, módulo y potencia.
+
 var_1=int(input("Introduce el primer número:"))
 var_2=int(input("Introduce el segundo número:"))
 

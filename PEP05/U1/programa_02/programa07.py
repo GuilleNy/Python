@@ -1,3 +1,8 @@
+"""
+Escribe un programa que reciba una cantidad de minutos y muestre por pantalla a
+cuantas horas y minutos corresponde.
+"""
+
 print("Introduce una cantidad de minutos: ")
 minutos=int(input())
 

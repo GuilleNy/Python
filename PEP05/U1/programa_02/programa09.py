@@ -1,3 +1,9 @@
+"""
+Escribe un programa que calcule la calificación de estudiante en un módulo. La
+calificación se obtiene de la calificación parcial en cada RA (RA1 20%, RA2, 60% y RA3
+20%).
+"""
+
 print("Introduce la calificacion para RA1: ")
 ra_1=float(input())
 print("Introduce la calificacion para RA2: ")

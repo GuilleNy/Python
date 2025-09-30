@@ -1,3 +1,5 @@
+#Escribe un programa que convierta un valor dado en grados Fahrenheit a grados Celsius.
+
 print("Introduce el grado Fahrenheit: ")
 grado_fh=int(input())
 

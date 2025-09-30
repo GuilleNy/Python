@@ -1,4 +1,6 @@
-#Siempre saber que tipos de datos se vaya a pedir por teclado para que no exista error.
+
+
+#Escribe un programa que pregunte la base y altura de una rectángulo y calcule su área y perímetro.
 base=int(input("Introduce la base:"))
 altura=int(input("Introduce la altura:"))
 
