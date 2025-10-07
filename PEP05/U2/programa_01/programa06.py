@@ -1,3 +1,7 @@
+"""
+Escribe un programa que pida una fecha (día, mes y año) y diga si es correcta
+"""
+
 fecha = input("Ingrese una fecha en formato dd/mm/aaaa: ")
 dia, mes, anio = fecha.split("/")
 correcto = True
