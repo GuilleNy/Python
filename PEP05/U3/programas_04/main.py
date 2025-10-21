@@ -1,7 +1,7 @@
-import conversiones
-import figuras
-import operaciones
+from matematicas import operaciones, figuras, conversiones
 
+
+# Definicion de funciones principales
 def menu_opciones():
     print("1.- Operaciones matemáticas")
     print("2.- Cálculo de áreas geométricas")
@@ -71,8 +71,11 @@ def opcion3_areas():
 
     if base > 0 and altura > 0:
         area = figuras.calcular_area_rectangulo(base, altura)
-        print(f"El area del triangulo es: {area}")
+        print(f"El area del Rectangulo es: {area}")
 
+
+# Función principal
+"""Función principal del programa"""
 def main():
     correcto = True
     while correcto :
@@ -123,4 +126,5 @@ def main():
             print("Opcion incorrecta.")
 
 #Programa principal
-main()
+if __name__ == "__main__":
+    main()
