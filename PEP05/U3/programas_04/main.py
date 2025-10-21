@@ -1,4 +1,4 @@
-from matematicas import operaciones, figuras, conversiones
+from matematicas import operaciones, figuras
 
 
 # Definicion de funciones principales
@@ -48,30 +48,46 @@ def mostrar_menu_areas ():
     print("4.- Salir")
 
 def opcion1_areas():
+    correcto = True
     print("Area del Circulo")
-    radio = int(input("Introduce el radio del circulo: "))
-
-    if radio > 0 :
-        area = figuras.calcular_area_circulo(radio)
-        print(f"El area del circulo es: {area:.2f}")
+    while correcto:
+        radio = int(input("Introduce el radio del circulo: "))
+        if radio > 0 :
+            area = figuras.calcular_area_circulo(radio)
+            print(f"El area del circulo es: {area:.2f}")
+            correcto = False
+        else:
+            print("El radio no puede ser un numero negativo. ")
 
 def opcion2_areas():
+    correcto = True
     print("Area del Triangulo")
-    base = int(input("Introduce el valor de la base: "))
-    altura = int(input("Introduce el valor de la altura: "))
 
-    if base > 0 and altura > 0:
-        area = figuras.calcular_area_triangulo(base, altura)
-        print(f"El area del triangulo es: {area}")
+    while correcto:
+        base = int(input("Introduce el valor de la base: "))
+        altura = int(input("Introduce el valor de la altura: "))
+
+        if base > 0 and altura > 0:
+            area = figuras.calcular_area_triangulo(base, altura)
+            print(f"El area del triangulo es: {area}")
+            correcto = False
+        elif base < 0 or altura < 0:
+            print("La base y altura no puede ser un numero negativo. ")
+       
 
 def opcion3_areas():
-    print("Area del Rectangulo")
-    base = int(input("Introduce el valor de la base: "))
-    altura = int(input("Introduce el valor de la altura: "))
+    correcto = True
+    print("Área del Rectángulo")
+    while correcto:
+        base = int(input("Introduce el valor de la base: "))
+        altura = int(input("Introduce el valor de la altura: "))
 
-    if base > 0 and altura > 0:
-        area = figuras.calcular_area_rectangulo(base, altura)
-        print(f"El area del Rectangulo es: {area}")
+        if base > 0 and altura > 0:
+            area = figuras.calcular_area_rectangulo(base, altura)
+            print(f"El área del rectángulo es: {area}")
+            correcto = False
+        else:
+            print("La base y la altura deben ser números positivos. Inténtalo de nuevo.")
 
 
 # Función principal
