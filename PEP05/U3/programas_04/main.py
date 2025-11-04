@@ -124,7 +124,7 @@ def main():
                     mostrar_menu_areas()
                     valido = True
                     while valido:
-                        opcion_areas= int(input("Introduce una opcion (1-5): "))
+                        opcion_areas= int(input("Introduce una opcion (1-4): "))
                         if opcion_areas >= 1 and opcion_areas <= 4:
                             match opcion_areas:
                                 case 1 :
