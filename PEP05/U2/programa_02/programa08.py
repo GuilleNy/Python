@@ -12,9 +12,12 @@ import random
 
 correcto = True
 cont = 0
+
+num_rand = random.randrange(1, 21)
+
 while correcto:
     numero = int(input("Adivina el numero. Ingresa un numero: "))
-    num_rand = random.randrange(1, 21)
+    
 
     if numero == num_rand:
         print(f"Correcto. Adivinaste el numero {numero}")
