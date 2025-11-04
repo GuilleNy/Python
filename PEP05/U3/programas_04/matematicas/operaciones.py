@@ -7,8 +7,8 @@ def restar (a, b):
 def multiplicar (a, b):
     return a*b
 
-def dividir (a, b):
-    c = 0
-    if a > 0:
-        c = a / b
-    return c
+def dividir(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return "No se puede dividir entre cero"
