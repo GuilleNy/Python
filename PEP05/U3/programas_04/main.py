@@ -103,8 +103,8 @@ def main():
                     mostrar_menu_operaciones()
                     valido = True
                     while valido:
-                        opcion_operaciones = int(input("Introduce una opcion (1-2): "))
-                        if opcion_operaciones >= 1 and opcion_operaciones <= 4:
+                        opcion_operaciones = int(input("Introduce una opcion (1-5): "))
+                        if opcion_operaciones >= 1 and opcion_operaciones <= 5:
                             match opcion_operaciones:
                                 case 1 :
                                     opcion1_operaciones()
@@ -124,7 +124,7 @@ def main():
                     mostrar_menu_areas()
                     valido = True
                     while valido:
-                        opcion_areas= int(input("Introduce una opcion (1-2): "))
+                        opcion_areas= int(input("Introduce una opcion (1-5): "))
                         if opcion_areas >= 1 and opcion_areas <= 4:
                             match opcion_areas:
                                 case 1 :
