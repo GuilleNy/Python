@@ -11,6 +11,7 @@ print("Mes:", mes)
 print("Año:", anio)
 
 
+#Aqui se comprueba que todo el formato este correcto
 if len(dia) != 2 :
     correcto = False
     mensaje += "El dia debe ser de 2 digitos. \n"

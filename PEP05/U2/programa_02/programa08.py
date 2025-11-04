@@ -33,3 +33,40 @@ while correcto:
         print("Lo siento. Solo tienes 3 intentos.")
         print(f"El numero era {num_rand}.")
         correcto = False
+
+
+
+    
+
+#otra forma
+"""
+
+numeroMaquina = random.randrange(1,21)
+#numeroMaquina = 20
+
+correcto = True
+intento = 3
+
+while correcto :
+    numeroJugad=int(input("Introduce el numero a adivinar: "))
+
+    if(numeroJugad == numeroMaquina):
+        print("Has adivinado!!!")
+        correcto = False
+    else:
+        if(numeroJugad < numeroMaquina):
+            print("EL numero a adivinar es mayor al numero introducido.")
+        else:
+            print("EL numero a adivinar es menor al numero introducido.")
+        
+        intento -= 1
+        print(f"Te quedan {intento} intentos.")
+        
+
+    if(intento == 0):
+        print("Has agotado todos los intentos")
+        print(f"EL numero era {numeroMaquina}")
+        correcto = False
+    
+
+"""
