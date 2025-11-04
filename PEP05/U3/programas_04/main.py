@@ -1,3 +1,13 @@
+#Tambien se puede asi
+#primera forma
+#from matematicas import sumar, calcular_area_circulo, a_binario
+
+#segunda forma
+#from matematicas.operaciones import sumar
+#from matematicas.figuras import calcular_area_circulo
+#from matematicas.conversiones import a_binario
+
+#tercera
 from matematicas import operaciones, figuras
 
 

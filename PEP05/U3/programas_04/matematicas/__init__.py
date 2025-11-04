@@ -10,3 +10,8 @@ __all__ = [
     "calcular_area_rectangulo", "calcular_area_triangulo", "calcular_area_circulo",
     "a_binario", "a_hexadecimal", "a_entero"
 ]
+
+"""
+__all__ = [...]
+Define qué se exporta al usar from matematicas import *
+"""
