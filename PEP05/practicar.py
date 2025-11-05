@@ -1,5 +1,11 @@
+import random
 
 
-frutas = ["Pera", "Manzana" , "Platano"]
-for i in frutas:
-    print(i)
+
+var = random.randint(1, 3)
+
+print(var)
+
+
+for i in range(1, 3):
+        print(f"Turno {i}")
