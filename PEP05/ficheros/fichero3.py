@@ -26,6 +26,16 @@ try:
         c = fichero.read(1)
         print(c)
 
+        #mueve el puntero del archivo a la posición indicada.
+        #En este caso, 0 significa volver al inicio del archivo.
+        fichero.seek(0)
+        print(c, end="")
+        print()
+
+        print(fichero .tell())
+
+
+
 except Exception as exc:
     print("Error", strerror(exc.errno))
 

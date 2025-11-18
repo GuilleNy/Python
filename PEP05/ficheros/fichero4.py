@@ -1,18 +1,24 @@
 from os import strerror
 
+personas = ["Ana", "Pedro", "Eva", "Lucas"]
+personas2 = ["Ana\n", "Pedro\n", "Eva\n", "Lucas\n"]
 
+ #Escribir en el fichero
 try:
     #recomendable abrir un fichero con with open()
-    with open("texto.txt", "rt", encoding="utf-8") as fichero:
+    with open("nuevo_texto.txt", "w", encoding="utf-8") as fichero:
 
-        #primera forma de leer un fichero
-        contenido2 = fichero.readlines()
-        print(contenido2)
-        #segunda forma de recorrer un fichero
+        #Escribir idrectamente una linea
+        fichero.write("linea 1\n")
 
-        for linea in fichero:
-            print(len(linea))
-            print(linea, end=" ")
+        #Escribir con una lista
+        for persona in personas:
+            fichero.write(f"{persona}\n")
+
+        #Escribir una secuencia
+        fichero.writelines(personas2)
+
+        
 
 except Exception as exc:
     print("Error", strerror(exc.errno))
