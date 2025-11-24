@@ -1,3 +1,18 @@
+"""
+Lectura básica con csv.reader()
+Crea un fichero llamado ciudades.csv con el siguiente contenido:
+    Ciudad,País,Población (millones)
+    Tokio,Japón,37.4
+    Delhi,India,30.3
+    Shanghái,China,27.1
+    São Paulo,Brasil,22.0
+Escribe un programa que:
+ Lea el fichero usando csv.reader().
+ Muestre en pantalla frases como:
+ La ciudad de Tokio está en Japón y tiene 37.4 millones de habitantes.
+ Controle las posibles excepciones
+"""
+
 from os import strerror
 import csv
 

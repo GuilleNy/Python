@@ -1,3 +1,20 @@
+"""
+Escritura de un CSV con csv.writer()
+Crea un programa que genere un fichero nuevo llamado capitales.csv con los
+siguientes datos:
+    Ciudad      País        Continente
+    París       Francia     Europa
+    Canberra    Australia   Oceanía
+    Nairobi     Kenia       África
+    Ottawa      Canadá      América
+El programa debe:
+ Escribir la cabecera y los datos con writerow() y writerows().
+ Usar un bloque try/except con os.strerror() para capturar errores de E/S.
+ Confirmar con un mensaje final: "Archivo 'capitales.csv' creado
+correctamente."
+
+"""
+
 from os import strerror
 import csv
 

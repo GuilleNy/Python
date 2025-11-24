@@ -1,3 +1,17 @@
+"""
+Lectura de un fichero JSON
+Crea un fichero llamado paises.json con el siguiente contenido:
+    [
+        {"nombre": "Japón", "continente": "Asia", "poblacion": 125.7},
+        {"nombre": "Canadá", "continente": "América", "poblacion": 38.2},
+        {"nombre": "España", "continente": "Europa", "poblacion": 48.0}
+    ]
+Escribe un programa que:
+ Abra el archivo y lo lea con json.load().
+ Muestre por pantalla cada país con un formato como:
+    Japón está en Asia y tiene 125.7 millones de habitantes.
+ Controle posibles errores con try/except.
+"""
 from os import strerror
 import json
 
