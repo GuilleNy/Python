@@ -16,6 +16,7 @@ try:
             fichero.write(f"{persona}\n")
 
         #Escribir una secuencia
+        #No añade automáticamente saltos de línea, así que si quieres que cada línea sea independiente, debes poner \n al final de cada string.
         fichero.writelines(personas2)
 
         
