@@ -13,11 +13,19 @@ try:
     )
 
     cursor = conexion.cursor()
-    sql = "CREATE TABLE ciudades (id INT AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(100) NOT NULL, pais VARCHAR(50), poblacion_millones FLOAT);"
+    sql = "INSERT INTO ciudades (nombre, pais, poblacion_millones) VALUES (%s, %s, %s)"
+    datos = [
+        ("Tokio", "Japón", 37.4),
+        ("Delhi", "India", 30.3),
+        ("Shanghái", "China", 27.1),
+        ("São Paulo", "Brasil", 22.0),
+        ("Ciudad de México", "México", 21.7)
+    ]
+    cursor.executemany(sql, datos)
 
-    cursor.execute(sql)
+    conexion.commit()
 
-    print("Tabla creada correctamente.")
+    print(cursor.rowcount ,"filas se han insertado..")
 
 except Error as e:
     print(f"Error con MySQL: {e}")

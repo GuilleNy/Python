@@ -1,6 +1,7 @@
 import mysql.connector
 from mysql.connector import Error
 
+conexion = None
 
 try:
     conexion = mysql.connector.connect(

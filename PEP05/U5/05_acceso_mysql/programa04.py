@@ -13,11 +13,13 @@ try:
     )
 
     cursor = conexion.cursor()
-    sql = "CREATE TABLE ciudades (id INT AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(100) NOT NULL, pais VARCHAR(50), poblacion_millones FLOAT);"
-
+    sql = "SELECT nombre , poblacion_millones FROM ciudades   WHERE poblacion_millones > 25 "
     cursor.execute(sql)
 
-    print("Tabla creada correctamente.")
+    resultado = cursor.fetchall()
+
+    for ciudad in resultado:
+        print(ciudad)
 
 except Error as e:
     print(f"Error con MySQL: {e}")
