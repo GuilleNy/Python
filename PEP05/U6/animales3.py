@@ -1,6 +1,7 @@
 class Animal:
 
-    numero_animales = 0 #atributo estatico como en java (global)
+    #Atributos de clase (class attributes)
+    numero_animales = 0 # Atributo de clase para contar instancias (global)
 
 
     def __init__(self, nombre, especie, edad, id_chip, peso=60):

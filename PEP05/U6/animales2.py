@@ -1,7 +1,7 @@
 class Animal:
 
-
-    def __init__(self, nombre, especie, edad, id_chip, peso=60):
+    #El constructor en Python se define con __init__ y el parámetro self es obligatorio para métodos de instancia
+    def __init__(self, nombre, especie, edad, id_chip, peso=60): 
         self.nombre = nombre #atributo publico
         self.especie = especie #atributo publico
         self.edad = edad #atributo publico

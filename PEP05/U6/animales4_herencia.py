@@ -5,6 +5,12 @@ class AnimalTerrestre:
         self.__edad = edad
         self.__peso = peso
     
+    """
+    Específicamente, se definen tres métodos para una propiedad:
+        ● Un getter - para acceder al valor del atributo. @property
+        ● Un setter - para actualizar el valor del atributo.    @precio.setter
+        ● Un deleter - para eliminar el atributo de la instancia    @precio.deleter
+    """
     @property
     def nombre(self):
         return self.__nombre
