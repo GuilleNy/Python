@@ -2,7 +2,7 @@ class Animal:
     def __init__(self, nombre, especie, edad, id_chip):
         self.nombre = nombre #atributo publico
         self.especie = especie #atributo publico
-        self.edad = edad #atributo publico
+        self._edad = edad #atributo publico
         self.__id_chip = id_chip #atributo privado, accedo a el con un get o set
 
         #atributo publico: accesible cuando uso el ojeto, ._id_chip 
@@ -35,10 +35,13 @@ class Animal:
 animal1 = Animal("Kuma", "tigre", 10, "a123")
 animal2 = Animal("Miu", "gato", 5, "a234")
 
+print(animal1.nombre)
+print(animal1._edad)
+print(animal1._Animal__id_chip)
 
 #Todos los atributus son publicos
 
-
+"""
 print(animal1.nombre)
 animal1.nombre = "Agod"
 print(animal2.especie)
@@ -55,3 +58,4 @@ animal1.set_id_chip(5) #Aqui lanza la excepction porque es un entero qeu se pasa
 print(animal1.get_id_chip())
 #print(animal1.Animal.__id_chip)
 
+"""

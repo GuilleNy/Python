@@ -1,19 +1,21 @@
 from abc import ABC, abstractmethod
 
 
-#una calse astracta no puede ser instanciada
+#Una clase astracta no están pensadas para instanciarse, sino para establecer una estructura común que las subclases deben implementar.
 class AnimalMarino(ABC):
 
     def __init__(self, nombre):
         self.__nombre = nombre
 
+    
+    #getter
     @property
     def nombre(self):
         return self.__nombre
+    
 
 
-
-    #obligo a cualquier clase hija a implementar estos métodos abstractos
+    #obligo a cualquier clase hija a implementar estos métodos abstractos o Python no permitirá instanciarla
     @abstractmethod
     def sonido(self):
         raise NotImplementedError
@@ -22,10 +24,11 @@ class AnimalMarino(ABC):
     def saluda(self):
         raise NotImplementedError
 
+    
     #yo implemente este método común para todas las clases hijas
     def salta(self):
-        print(f"El delfin {self.nombre} está saltando fuera del agua!")
-
+        print(f"{self.nombre} está saltando fuera del agua!")
+    
 
 class Delfin(AnimalMarino):
 
@@ -38,11 +41,11 @@ class Delfin(AnimalMarino):
     def sonido(self):
         print("Click y silbido")
 
-
+    """
     def salta(self):
         print(f"El delfin {self.nombre} está saltando fuera del agua!")
 
-
+    """
 
 class Tiburon(AnimalMarino):
 
@@ -64,13 +67,18 @@ animal2 = Delfin("Flipper")
 animal3 = Tiburon("Tiburon Blanco")
 animal4 = Tiburon("Tiburon Martillo")
 
-
+"""
 animal1.saluda()
 animal3.saluda()
 
+animal1.salta()
+animal3.salta()
+
+"""
 lista_animales = [animal1, animal2, animal3, animal4]
 
 for a in lista_animales:
     a.saluda()
     a.sonido()
     a.salta() 
+

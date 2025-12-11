@@ -1,6 +1,5 @@
 class AnimalTerrestre:
-    
-    def __init__(self, nombre, edad, peso):
+    def __init__(self, nombre, edad, peso): # __init__ Constructor de la clase (inicializa el objeto)
         self.__nombre = nombre
         self.__edad = edad
         self.__peso = peso
