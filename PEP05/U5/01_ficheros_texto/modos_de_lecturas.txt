@@ -1,0 +1,34 @@
+"r" → Read (solo lectura)
+    Abre el fichero solo para leer.
+    El fichero debe existir.
+    El puntero se coloca al inicio.
+
+"r+" → Leer y escribir
+    Permite leer y escribir.
+    El fichero debe existir.
+    El puntero está al inicio.
+    No borra contenido automáticamente.
+
+
+"w" → Write (solo escritura)
+    Abre el fichero para escribir.
+    Si el fichero existe, lo borra completamente.
+    Si no existe, lo crea.
+
+"w+" → Leer y escribir (sobrescribe el fichero)
+    Permite leer y escribir.
+    Si existe, lo borra entero.
+    Si no existe, lo crea.
+    Puntero al inicio en un fichero vacío.
+
+"a" → Append (añadir)
+    Abre el fichero para escribir al final.
+    No borra lo existente.
+    Si no existe, lo crea.
+    El puntero se coloca al final.
+
+"a+" → Leer y escribir (añadir al final)
+    Permite leer y añadir al final.
+    No borra contenido.
+    Si no existe, lo crea.
+    El puntero empieza al final del fichero.

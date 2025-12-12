@@ -29,7 +29,7 @@ patrimonios = [
 try:
 
     #recomendable abrir un fichero con with open()
-    with open("U5/03_ficheros_csv/patrimonios.csv", "w+", encoding="utf-8") as fichero_csv:
+    with open("patrimonios.csv", "w+", encoding="utf-8") as fichero_csv:
         
         writer = csv.DictWriter(fichero_csv, fieldnames=cabeceras, delimiter= ";")
 
