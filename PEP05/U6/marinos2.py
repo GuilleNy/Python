@@ -7,19 +7,22 @@ class AnimalMarino(ABC):
     def __init__(self, nombre):
         self.__nombre = nombre
     
+  
     #en esta ocasion es necesario el getter para acceder al nombre desde las clases hijas.
     #Si el @property está definido en la clase padre, las subclases heredan el getter automáticamente
     @property
     def nombre(self):
         return self.__nombre
+   
     
-
-
+    
     #obligo a cualquier clase hija a implementar estos métodos abstractos
     @abstractmethod
     def sonido(self):
         raise NotImplementedError
-    
+  
+        
+
     @abstractmethod
     def saluda(self):
         raise NotImplementedError
@@ -84,7 +87,7 @@ print(animal1) # Sin el metodo __str__ habria mostrado la direccion en memoria
 print(animal1.__dict__)
 
 
-"""
+
 #python hace la suma de los dos objetos llamando al metodo magico __add__
 #Si obj1 tiene definido __add__, se llama a ese método.
 #Pero si obj1 no tiene __add__, Python intentará llamar a __radd__ en obj2.
@@ -92,4 +95,3 @@ print(animal1.__dict__)
 animal3 = animal1 + animal2
 print(animal3)  # Animal marino: DollyFlipper
 
-"""
