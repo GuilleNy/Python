@@ -1,0 +1,28 @@
+print(texto[0:4]) # Pyth (índices de 0 a 3)
+print(texto[::2]) # Pto (caràcteress del 0 al 5 de 2 en 2)
+print(texto[1:4:2]) # yh (caràcteress 1 al 3 de 2 en 2)
+print(texto[:3]) # Hol (desde el índice 0 al índice 2)
+print(hola[::-1]) # invierte la cadena
+
+upper(): Devuelve la cadena en mayúsculas.
+
+lower(): Devuelve la cadena en minúsculas. 'PEDRO'.lower()→ 'pedro'
+
+capitalize(): Devuelve la cadena con la primera letra en mayúscula.'pedro'.capitalize()→ 'Pedro'
+
+title(): Devuelve la cadena con la primera letra de cada palabra en mayúscula.'pedro perez'.title()→ 'Pedro Perez'
+
+strip(): Elimina los espacios en blanco al principio y al final de la cadena. ' hola'.strip()→ 'hola'
+
+split(separator): Divide la cadena en una lista de subcadenas utilizando elseparador especificado. 'a,b,c'.split(',')→ ['a', 'b', 'c']
+
+find(sub): Devuelve el índice de la primera aparición de la subcadena sub. Si no la
+encuentra, devuelve -1. 'hola'.find('o')→ 0
+
+min(objeto): La función min() encuentra el elemento mínimo de la secuencia pasada
+como argumento. Existe una condición, la secuencia (cadena o lista) no puede estar
+vacía, de lo contrario obtendrás una excepción ValueError.
+
+max(objeto): La función max() encuentra el elemento máximo de la secuencia
+pasada como argumento. Existe una condición, la secuencia (cadena o lista) no puede
+estar vacía, de lo contrario obtendrás una excepción ValueError
