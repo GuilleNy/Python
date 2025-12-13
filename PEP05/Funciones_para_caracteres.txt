@@ -4,17 +4,29 @@ print(texto[1:4:2]) # yh (caràcteress 1 al 3 de 2 en 2)
 print(texto[:3]) # Hol (desde el índice 0 al índice 2)
 print(hola[::-1]) # invierte la cadena
 
-upper(): Devuelve la cadena en mayúsculas.
+cadena.upper(): Devuelve la cadena en mayúsculas.
 
-lower(): Devuelve la cadena en minúsculas. 'PEDRO'.lower()→ 'pedro'
+cadena.lower(): Devuelve la cadena en minúsculas. 'PEDRO'.lower()→ 'pedro'
 
-capitalize(): Devuelve la cadena con la primera letra en mayúscula.'pedro'.capitalize()→ 'Pedro'
+cadena.islower(): Devuelve True → si todos los caracteres alfabéticos están en minúscula, Devuelve False → en cualquier otro caso
+    texto = "hola mundo"
+    print(texto.islower())  # True
 
-title(): Devuelve la cadena con la primera letra de cada palabra en mayúscula.'pedro perez'.title()→ 'Pedro Perez'
+cadena.capitalize(): Devuelve la cadena con la primera letra en mayúscula.'pedro'.capitalize()→ 'Pedro'
 
-strip(): Elimina los espacios en blanco al principio y al final de la cadena. ' hola'.strip()→ 'hola'
+cadena.title(): Devuelve la cadena con la primera letra de cada palabra en mayúscula.'pedro perez'.title()→ 'Pedro Perez'
 
-split(separator): Divide la cadena en una lista de subcadenas utilizando elseparador especificado. 'a,b,c'.split(',')→ ['a', 'b', 'c']
+cadena.istitle():   Devuelve True → si la cadena cumple el formato título, Devuelve False → en cualquier otro caso
+
+    texto = "Organización De Las Naciones Unidas"
+    print(texto.istitle())  # True
+
+cadena.strip(): Elimina los espacios en blanco al principio y al final de la cadena. ' hola'.strip()→ 'hola'
+
+cadena.split(separator): Divide la cadena en una lista de subcadenas utilizando elseparador especificado. 'a,b,c'.split(',')→ ['a', 'b', 'c']
+
+cadena.replace(old, new): Sustituye todas las apariciones de la subcadena oldpor new.
+'hola'.replace('o', 'a')→ 'hala'
 
 find(sub): Devuelve el índice de la primera aparición de la subcadena sub. Si no la
 encuentra, devuelve -1. 'hola'.find('o')→ 0
@@ -26,3 +38,11 @@ vacía, de lo contrario obtendrás una excepción ValueError.
 max(objeto): La función max() encuentra el elemento máximo de la secuencia
 pasada como argumento. Existe una condición, la secuencia (cadena o lista) no puede
 estar vacía, de lo contrario obtendrás una excepción ValueError
+
+cadena.isdigit(): Devuelve True si todos los caracteres de la cadena son dígitos. (La cadena no puede estar vacía.)
+'1234'.isdigit()→ True
+
+cadena.isnumeric(): es un método de las cadenas (str) que sirve para comprobar si una cadena 
+representa un valor numérico, en un sentido más amplio que isdigit(). (La cadena no puede estar vacía.)
+'123'.isnumeric()     # True
+"-123".isnumeric()   # False (signo menos)
