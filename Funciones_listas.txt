@@ -1,0 +1,23 @@
+lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# Devuelve todos los elementos de la lista
+lista[:]
+# Devuelve los elementos desde el índice 2 al 5
+print(lista[2:6])
+# Devuelve desde el primer elemento hasta el índice 5
+print(lista[:6])
+# Devuelve desde el primer hasta el último de dos en dos
+print(lista[::2])
+# Devuelve desde el índice -3 hasta el final
+print(lista[-3:])
+# Devuelve la lista en orden inverso
+print(lista[::-1])
+
+Longitud de la lista: len(lista)
+
+Añadir elementos a una lista : 
+
+    Al final --> lista.append('apple') o lista+=['pear']
+    En una posición --> lista.insert(3 , 'kiwi')
+
+Invertir una lista
+    El método reverse() invierte la lista y modifica su contenido --> lista.reverse()

@@ -14,3 +14,7 @@ El código, con este mensaje: AVE CAESAR da como salida: BWF DBFTBS
 Crea otra función que reciba una cadena cifrada y retorne otra descifrada.
 Prueba las dos funciones
 """
+
+
+#print(type(ord("A")))
+
