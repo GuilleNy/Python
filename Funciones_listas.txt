@@ -21,3 +21,113 @@ Añadir elementos a una lista :
 
 Invertir una lista
     El método reverse() invierte la lista y modifica su contenido --> lista.reverse()
+
+Número de ocurrencias de un elemento en la lista
+    Para contar cuántas veces aparece un determinado valor dentro de una lista se puede usar el
+    método count().
+        lista = ['banana', 'orange', 'mango', 'lemon']
+        lista.append('orange')
+        print(lista.count('orange'))
+        #Salida
+        2
+
+Convertir una lista a cadena de texto
+    lista = ['banana', 'orange', 'mango', 'lemon']
+ 
+    print('+'.join(lista))
+    #Salida
+    banana+orange+mango+lemon
+
+Eliminar elemento de una posición determinada --> del lista[indice]
+    lista = ['banana', 'orange', 'mango', 'lemon']
+    del lista[1]
+
+Eliminar elementos de una lista por su valor --> lista.remove('valor')
+    lista = ['banana', 'orange', 'mango', 'lemon']
+    lista.remove('orange')
+
+Pertenencia de una objeto a una lista
+    lista = ['banana', 'orange', 'mango', 'lemon']
+
+        if 'banana' in lista:
+        print('Si, banana está en la lista!')
+        else:
+        print('No, banana no está en la lista!')
+
+Encontrar el índice de un elemento
+    lista = ['banana', 'orange', 'mango', 'lemon']
+    print(lista.index('orange'))
+    #Salida
+    1
+
+Ordenar una lista
+    El método sort() ordena la lista y modifica su contenido --> lista.sort()
+    La función sorted retorna una nueva la lista ordenada pero no modificará la lista original --> lista_ordenada=sorted(lista)
+
+
+
+Funciones matemáticas
+Python nos ofrece, entre otras, funciones matemáticas básicas que se pueden aplicar sobre listas.
+    temperaturas = [25, 30, 35, 40]
+    # Suma de los elementos
+        print(sum(temperaturas))
+    # Media
+        media = sum(temperaturas) / len(temperaturas)
+        print(media)
+    # Máximo
+        print(max(temperaturas))
+    # Mínimo
+        print(min(temperaturas))
+
+Compresión de listas
+
+    #Crear una lista con 5 cadenas:
+        lista = ["Hola" for i in range(5)]
+        print (lista)
+
+    #Crear una lista con los 5 primeros números:
+        lista = [i for i in range(1,6)]
+        print (lista)
+
+    #Crear una lista con los cuadrados de los cinco primeros números:
+        lista = [i ** 2 for i in range(1,6)]
+        print (lista)
+
+    #Crear una lista con los números pares de los 10 primeros números:
+        lista = [i for i in range(1,11) if i % 2 == 0]
+        print (lista)
+
+    #Crear una lista a partir de una cadena
+        valores = '32,45,11,87,20,48'
+        lista = [int(valor) for valor in valores.split(',')]
+        print(lista)
+
+        valores = '32,45,11,87,20,48'
+        lista = [int(valor) for valor in valores.split(',') if valor > '30']
+        print(lista)
+
+    #Convertir palabras a mayúsculas
+        palabras = ["hola", "mundo", "python"]
+        mayúsculas = [palabra.upper() for palabra in palabras]
+
+
+Enumerate
+for i, v in enumerate(numeros):
+    if v % 2 == 0:
+        print(f"Índice {i} → número par {v}")
+
+
+Recorrer una lista de dos dimensiones
+    temperatura = [[12,11,9,13,12], [5,8,8,5,4]]
+
+        Priemra forma:
+            for fila in temperatura:
+                for i in fila:
+                    print(i, end=" ")
+                print()
+
+        Segunda forma:
+            for i in range(len(temperatura)):
+                for j in range(len(temperatura[i])):
+                    print(temperatura[i][j], end=" ")
+                print()

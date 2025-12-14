@@ -20,3 +20,14 @@ print("")
 
 for i in range(len(lista2)):
     print(lista2[i])
+
+
+
+texto = "3+4"
+texto2 = "3+4"
+
+lista_split = texto.split('+')
+lista_partition = list(texto2.partition('+'))
+
+print(lista_split)
+print(lista_partition)

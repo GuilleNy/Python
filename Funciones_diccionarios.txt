@@ -1,0 +1,143 @@
+Creación de diccionarios  
+    #Con los caracteres {}
+        diccionario_vacio = {}
+        diccionario = {"nombre": "Guillermo", 
+                    "edad":25, 
+                    "pais": "Ecuador"}
+
+
+    #Utilizando el constructor dict
+        diccionario_vacio2 = dict()
+        diccionario2 = dict(nombre= "Guillermo", 
+                    edad=25, 
+                    pais= "Ecuador")
+    #También es posible crear un diccionario vacío y agregar elementos posteriormente.
+        persona = {}
+        persona["nombre"] = "Juana"
+        persona["apellidos"] = "García"
+        persona["edad"] = 105
+        persona["pais"] = "España"
+        persona["lenguajes"] = ["JavaScript", "Java", "SQL", "C", "Python"]
+        persona["direccion"] = {"calle": "Alcala", "numero": 33}
+
+
+Acceso a elementos
+    
+        persona = {
+        "nombre": "Juana",
+        "apellidos": "García",
+        "edad": 105,
+        "pais": "España",
+        "lenguajes": ["JavaScript", "Java", "SQL", "C", "Python"], # esto es una lista
+        "direccion": {"calle": "Alcala", "numero": 33}} #esto un diccionario 
+
+    #Usando corchetes
+        print(persona["nombre"])
+        print(persona["apellidos"])
+
+    #Usando el método get()
+        print(persona.get("edad"))
+        print(persona.get("lenguajes")[2])
+        print(persona.get("direccion").get("numero"))
+
+
+Añadir elementos
+    #Usando los corchetes es posible añadir más elementos clave-valor.
+    persona["altura"] = 1.60
+    persona["peso"] = 56
+
+Modificar elementos
+    persona["peso"] = 60
+
+
+Obtener todos los elementos
+    Existen métodos para obtener los elementos de un diccionario.
+    #Claves (método keys())
+        Devuelve una lista con las claves.
+        print(persona.keys())
+    #Valores (método values())
+        Devuelve una lista con los valores.
+        print(persona.values())
+    #Claves y valores (método items())
+        Devuelve una lista de tuplas.
+        print(persona.items())
+
+Recorrer(iterar) los elementos de un diccionario
+    Usando bucles es posible recorrer tanto
+        persona = {
+        "nombre": "Juana",
+        "apellidos": "García",
+        "edad": 105,
+        "pais": "España",
+        "lenguajes": ["JavaScript", "Java", "SQL", "C", "Python"],
+        "direccion": {"calle": "Alcala", "numero": 33},
+        }
+    ● Las claves
+        # Recorrer las claves
+        for clave in persona:
+        print(clave)
+    ● Los valores
+        # Recorrer los valores
+        for valor in persona.values():
+        print(valor)
+    ● Los pares clave valor
+        # Recorrer los pares clave-valor
+        for clave, valor in persona.items():
+        print(clave, ":", valor)
+
+Eliminar elementos
+    Usando del es posible eliminar un par clave-valor. Si no existe el campo da una excepción
+    KeyError
+    ● Por su clave
+        del persona["edad"]
+    ● Por su clave (con extracción) (método pop())
+        print(persona.pop("edad")) # Salida 105
+    ● Borrar todos los elementos
+        persona.clear()
+        print(persona) # Salida {}
+    ● Borrado completo (reasignado)
+        persona = {} # Busca otra zona de memoria vacía.
+
+Combinar diccionarios
+    ● Si la clave no existe, se añade con su valor.
+    ● Si la clave ya existe, se añade con el valor del «último» diccionario en la mezcla.
+
+        combinacion = rae1 | rae2
+    
+Buscar en un diccionario , Pertenencia de una clave
+    Es posible saber si una clave pertenece al diccionario usando los operadores in y not in
+    
+    print("nombre" in persona) # True
+    print("edad" in persona) # True
+    print("Juana" in persona) # False
+    print("ciudad" in persona) # False
+    print("Java" not in persona["lenguajes"]) # True
+
+Compresión de diccionario
+    # Diccionario que cuenta cuántas veces aparece cada letra en una palabra
+        palabra = "python"
+        frecuencia = {letra: palabra.count(letra) for letra in palabra}
+        print(frecuencia)
+        # Salida
+            {'p': 1, 'y': 1, 't': 1, 'h': 1, 'o': 1, 'n': 1}
+
+    # Diccionario que cuenta cuántas veces aparece cada palabra en una lista
+        cadena = "Que lindo día que hace hoy"
+        lista = cadena.lower().split(' ')
+
+        diccionario2 = {valor: lista.count(valor) for valor in lista}
+        print(diccionario2)
+        #Salida 
+            {'que': 2, 'lindo': 1, 'día': 1, 'hace': 1, 'hoy': 1}
+
+
+
+
+Añadir contenido
+    append() → solo listas
+
+    Tuplas → inmutables
+
+    Diccionarios → diccionario["clave"] = valor
+
+    Conjuntos → add()
