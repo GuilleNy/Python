@@ -16,7 +16,7 @@ try:
     sql = "SELECT nombre , poblacion_millones FROM ciudades   WHERE poblacion_millones > 25 "
     cursor.execute(sql)
 
-    resultado = cursor.fetchall()
+    resultado = cursor.fetchall() #fetchall() devuelve una lista de tuplas con los resultados de la consulta.
 
     for ciudad in resultado:
         print(ciudad)

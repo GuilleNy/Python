@@ -1,0 +1,23 @@
+Para utilizar el MySQL
+
+1.- Necesito posicionarme en la carpeta de MySQL y abrir la terminal y ejecutar esto:
+
+	docker compose up -d
+
+	- con esto ya puedo acceder al phpmyadmin del navegador.
+
+2.- Para crear una conexión con MySQL de mi proyecto debo hacer esto:
+	-Cabe destacar que debemos crear un entorno virtual antes -->  python3 -m venv .venv
+	-Instalo el pip en mi carpeta donde vaya a realizar mi trabajo
+	-Me posiciono en mi carpeta de trabajo y abro la terminal en visualStudios y scribo esto:
+		pip install mysql-connector-python
+		
+	-Ejecutamos el fichero db.py donde se realiza la conexion.
+
+		(.venv) m@Aula02-05:~/Documentos/Python/PEP05/U5/db$ python3 db.py
+
+	Tiene que salir esto para que todo esté correcto:
+
+		<mysql.connector.connection_cext.CMySQLConnection object at 0x7d5668502a50>
+
+ 
