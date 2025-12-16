@@ -17,7 +17,8 @@ try:
     valores = ("Breaking Bad", 5, "Drama")
     """
    
-
+    if conexion.is_connected():
+        print("Conexión establecida correctamente")
 
     sql = "SELECT * FROM series;" # Consulta para obtener todos los registros de la tabla 'series'.
 
