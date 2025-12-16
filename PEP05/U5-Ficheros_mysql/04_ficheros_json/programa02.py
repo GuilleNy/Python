@@ -30,7 +30,7 @@ try:
 
     #recomendable abrir un fichero con with open()
     with open("U5/04_ficheros_json/capitales.json", "w+", encoding="utf-8") as fichero_json:
-        json.dump(capitales, fichero_json , ensure_ascii=False, indent=4)
+        json.dump(capitales, fichero_json , ensure_ascii=False, indent=4)# ensure_ascii=False → mantiene tildes y ñ, indent=4 → mejora la legibilidad
 
         print("Archivo 'capitales.json' creado correctamente.")
 except IOError as e:

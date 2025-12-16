@@ -18,7 +18,7 @@ try:
    
 
     #recomendable abrir un fichero con with open()
-    with open("U5/03_ficheros_csv/ciudades.csv", "r", encoding="utf-8") as fichero_csv:
+    with open("ciudades.csv", "r", encoding="utf-8") as fichero_csv:
         reader = csv.DictReader(fichero_csv) #devuelve como un diccionario, usando la cabecera como claves
 
         cabeceras = reader.fieldnames #reader.fieldnames devuelve las cabeceras del CSV como una lista de strings. ['Ciudad', 'País', 'Población (millones)']

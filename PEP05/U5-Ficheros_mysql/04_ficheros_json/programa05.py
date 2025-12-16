@@ -17,11 +17,11 @@ import json
 
 try:
 
-    with open("U5/04_ficheros_json/paises.json", "r", encoding="utf-8") as fichero_paises:
+    with open("paises.json", "r", encoding="utf-8") as fichero_paises:
         paises = json.load(fichero_paises)
 
 
-    continente = input("Introduce el nombre de un continente: ")
+    continente = input("Introduce el nombre de un continente: ") #Europa
 
     paises_filtrados = []
 
@@ -30,8 +30,8 @@ try:
             paises_filtrados.append(fila)
             print(f"{fila['nombre']} tiene una poblacion de {fila['poblacion']} millones de habitantes.")
 
-
-    with open("U5/04_ficheros_json/paises_filtrados.json", "w+", encoding="utf-8") as fichero_json:
+    print(paises_filtrados) #[{'nombre': 'España', 'continente': 'Europa', 'poblacion': 48.0}]
+    with open("paises_filtrados.json", "w+", encoding="utf-8") as fichero_json:
         json.dump( paises_filtrados, fichero_json , ensure_ascii=False, indent=4)
 
         print("Archivo 'paises_filtrados.json' creado correctamente.")
