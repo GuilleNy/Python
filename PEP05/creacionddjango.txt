@@ -1,0 +1,8 @@
+python3 -m venv .venv
+source .venv/bin/activate
+pip install django~=5.0.0
+django-admin startproject django_proyecto .
+python manage.py startapp empresa
+python manage.py runserver
+python manage.py migrate
+python manage.py runserver
