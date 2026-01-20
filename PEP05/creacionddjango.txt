@@ -6,3 +6,22 @@ python manage.py startapp empresa
 python manage.py runserver
 python manage.py migrate
 python manage.py runserver
+
+
+Creacion de un repositorio (esto para subir los cambios a github):
+1. Dentro de la carpeta raíz (02_django_sitioweb_personal) inicia el repositorio.
+(.venv) $ git init
+2. Si haces un git status observa que aparecen .venv , db.sqlite3 y
+__pycache__ aparecen como un posible cambio.
+
+3. Crea un archivo .gitignore con el siguiente contenido.
+.venv/
+__pycache__/
+db.sqlite3
+
+5. Para el servidor de con Ctrl +C y ejecutar este comando.
+(.venv) $ pip freeze > requirements.txt
+
+6. Ahora ya podemos hacer nuestro primer commit.
+(.venv) $ git add -A​
+(.venv) $ git commit -m "Añade aplicación sitio"
