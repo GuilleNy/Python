@@ -6,7 +6,7 @@ python manage.py startapp empresa
 python manage.py runserver
 python manage.py migrate
 python manage.py runserver
-
+ 
 
 Creacion de un repositorio (esto para subir los cambios a github):
 1. Dentro de la carpeta raíz (02_django_sitioweb_personal) inicia el repositorio.
