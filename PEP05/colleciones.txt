@@ -1,0 +1,109 @@
+Listas (list)
+
+    Colección ordenada y mutable. Permite elementos repetidos.
+
+    frutas = ["manzana", "pera", "plátano"]
+
+    print(frutas[0])  # manzana
+
+    frutas.append("naranja")
+    print(frutas)
+
+    Eliminar elementos de una lista
+    
+        Eliminar elemento de una posición determinada
+        lista = ['banana', 'orange', 'mango', 'lemon']
+        del lista[1]
+        print(lista)
+        # Salida
+        ['banana', 'mango', 'lemon']
+
+        Eliminar el último elemento de una lista
+        lista = ['banana', 'orange', 'mango', 'lemon']
+        print(lista.pop())
+        print(lista)
+        # Salida
+        lemon
+        ['banana', 'orange', 'mango']
+
+        Eliminar elementos de una lista por su valor
+        lista = ['banana', 'orange', 'mango', 'lemon']
+        lista.remove('orange')
+        print(lista)
+        # Salida
+        ['banana', 'orange', 'mango']
+Diccionarios (dict)
+
+    Guardan datos en pares clave:valor.
+
+    alumno = {
+        "nombre": "Guille",
+        "edad": 25
+    }
+
+    print(alumno["nombre"])  # Guille
+
+    alumno["edad"] = 26
+Tuplas (tuple)
+
+    Colección ordenada e inmutable (no se puede modificar).
+
+    coordenadas = (10, 20)
+
+    print(coordenadas[0])  # 10
+Conjuntos (set)
+
+    Colección desordenada sin elementos repetidos.
+
+    numeros = {1, 2, 3, 3, 4}
+
+    print(numeros)  # {1, 2, 3, 4}
+    Iterar sobre múltiples listas con zip()
+
+Permite recorrer varias listas a la vez.
+
+    compra = ["Agua", "Aceite", "Arroz"]
+    detalles = ["mineral natural", "de oliva virgen", "basmati"]
+
+    for producto, detalle in zip(compra, detalles):
+        print(producto, detalle)
+
+    Salida
+
+    Agua mineral natural
+    Aceite de oliva virgen
+    Arroz basmati
+Comprobar si un elemento pertenece a una lista
+
+    Se usa in.
+
+    lista = ["banana", "orange", "mango", "lemon"]
+
+    if "banana" in lista:
+        print("Sí, banana está en la lista")
+    else:
+        print("No está en la lista")
+    Ordenar una lista
+    sort()
+
+Ordena la lista original.
+
+    lista = ["banana", "orange", "mango", "lemon"]
+
+    lista.sort()
+
+    print(lista)
+
+    Salida
+
+    ['banana', 'lemon', 'mango', 'orange']
+    sorted()
+
+Devuelve una nueva lista ordenada sin modificar la original.
+
+    lista = ["banana", "orange", "mango", "lemon"]
+
+    lista_ordenada = sorted(lista)
+
+    print(lista)           # Original
+    print(lista_ordenada)  # Ordenada

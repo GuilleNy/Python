@@ -34,13 +34,13 @@ lista = \['banana', 'orange', 'mango', 'lemon']
 
 
 
-&nbsp;	*if 'banana' in lista:*
+	if 'banana' in lista:
 
-		*print('Si, banana está en la lista!')*
+		print('Si, banana está en la lista!')
 
-	*else:*
+	else:
 
-		*print('No, banana no está en la lista!')*
+		print('No, banana no está en la lista!')
 
 
 
